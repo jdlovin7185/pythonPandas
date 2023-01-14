@@ -16,5 +16,6 @@ print("Before merge\n", dataframes_concat)
 
 # Performs an inner join where needed, almost like how you will do it in
 # SQL, but pandas does it for you
+# With the How parameter
 df3 = pd.merge(df1, df2)
 print("After merge\n", df3)
