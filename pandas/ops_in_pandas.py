@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv('dataset.csv')
+df = pd.read_csv('../dataset.csv')
 
 df_rock_genres = df.loc[df['track_genre'] == 'rock'].head()
 

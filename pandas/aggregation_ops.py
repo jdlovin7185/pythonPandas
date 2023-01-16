@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv('dataset.csv')
+df = pd.read_csv('../dataset.csv')
 
 
 # aggregate function is used to to find the minimum and maximum values of the numerical values

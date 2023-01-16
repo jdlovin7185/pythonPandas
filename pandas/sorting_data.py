@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv('dataset.csv')
+df = pd.read_csv('../dataset.csv')
 # this will sort descending 0 to whatever loudness goes down to
 df_loudness = df.sort_values(by='loudness')
 

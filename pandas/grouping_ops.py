@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv('dataset.csv')
+df = pd.read_csv('../dataset.csv')
 
 group_by_track_genre = df.groupby(['track_genre']).count()[['artists']]
 
