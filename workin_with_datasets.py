@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv('../dataset.csv')
+df = pd.read_csv('dataset.csv')
 
 # shows the whole file
 # print(df)
