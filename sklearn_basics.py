@@ -5,7 +5,10 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 
-df = pd.read_csv('auto-mpg.csv')
+# if we run this program with this file, we will get negative coef and intercept
+# df = pd.read_csv('auto-mpg.csv')
+# if we run the program with this file, we will get more accurate data because of the origins of column
+df = pd.read_csv('auto_mpg.csv')
 
 # dropping null-values
 df.dropna(inplace=True)
@@ -52,7 +55,9 @@ y_pred_test = reg.predict(x_test)
 # to the real value in training data set
 # r2_s = r2_score(y_train, y_pred_train)
 # returned -> 0.9060446973140711
+# returned -> 0.8194239716903474, new file
 r2_s = r2_score(y_test, y_pred_test)
 # returned -> -2.812096220463178e+17
+# returned -> 0.8387519287083123, new file
 print(r2_s)
 
